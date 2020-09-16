@@ -1,42 +1,42 @@
-0context api kullandık.
-userprovider ve userconsumer ile  bilgi çektik
-userprovider ı  index js de kullanarak    <App> i sarmallaadık.
-users sayfasında userconsumerdan veri çektik.
-reducer ve action  kullanarak  statelerimizi context sayfamızdan aldık. güncellenmemiş statei alarak yeni 
-güncelleme işlemei yaptık.,
-reducer ile switch case kullanarak  silme işlemi için id kontrolü yaptırdık.
-user sayfamızda  payloadımızdan gelen id yi kullanarak action yardımı ile silme işlemini dispatchlerle sağladık.
+0context api kullandÄ±k.
+userprovider ve userconsumer ile  bilgi Ã§ektik
+userprovider Ä±  index js de kullanarak    <App> i sarmallaadÄ±k.
+users sayfasÄ±nda userconsumerdan veri Ã§ektik.
+reducer ve action  kullanarak  statelerimizi context sayfamÄ±zdan aldÄ±k. gÃ¼ncellenmemiÅŸ statei alarak yeni 
+gÃ¼ncelleme iÅŸlemei yaptÄ±k.,
+reducer ile switch case kullanarak  silme iÅŸlemi iÃ§in id kontrolÃ¼ yaptÄ±rdÄ±k.
+user sayfamÄ±zda  payloadÄ±mÄ±zdan gelen id yi kullanarak action yardÄ±mÄ± ile silme iÅŸlemini dispatchlerle saÄŸladÄ±k.
 
 
-user de silme işlemi yaptık
+user de silme iÅŸlemi yaptÄ±k
 
 
-SİLME BİTTİ SIRA EKLEME DE -------------- adduser
+SÄ°LME BÄ°TTÄ° SIRA EKLEME DE -------------- adduser
 
-Form sayfasında  ekrana girdi almaı adduser den  sağladık basıtığımızda changeInput ile değiştirdik.
-Yeni ekleyeceğimiz adaya uniq id tamamladık her adayın id si farklı olsun diye bunuda uniqid kütüphanesi ile yaptık.
+Form sayfasÄ±nda  ekrana girdi almaÄ± adduser den  saÄŸladÄ±k basÄ±tÄ±ÄŸÄ±mÄ±zda changeInput ile deÄŸiÅŸtirdik.
+Yeni ekleyeceÄŸimiz adaya uniq id tamamladÄ±k her adayÄ±n id si farklÄ± olsun diye bunuda uniqid kÃ¼tÃ¼phanesi ile yaptÄ±k.
 dispatch kullanarak add_user yapabilmek iin userconsumer context den  dahil ettik.
-context sayfamızda delete user da olduğu gibi switch case kısmımıza add useri ekleriz.
-kullanıcımızı eklemiş oluruz.
+context sayfamÄ±zda delete user da olduÄŸu gibi switch case kÄ±smÄ±mÄ±za add useri ekleriz.
+kullanÄ±cÄ±mÄ±zÄ± eklemiÅŸ oluruz.
 
-EKLEME BİTTİ -----------------------------
-
-
-json server kullanımı  bunun için jasonplaceholder  kullandık.   online restful api miz
-
-db json dosyası oluşturduk  context sayfamızdaki verileri jsona aktardık.
-json serveri çalıştırmak için : json-server --watch api/db.json
-json server istek yapabilmek için hep açık olmalı
+EKLEME BÄ°TTÄ° -----------------------------
 
 
+json server kullanÄ±mÄ±  bunun iÃ§in jasonplaceholder  kullandÄ±k.   online restful api miz
+
+db json dosyasÄ± oluÅŸturduk  context sayfamÄ±zdaki verileri jsona aktardÄ±k.
+json serveri Ã§alÄ±ÅŸtÄ±rmak iÃ§in : json-server --watch api/db.json
+json server istek yapabilmek iÃ§in hep aÃ§Ä±k olmalÄ±
 
 
 
---- render da set state yapılmıyor sadece  o componeneti dönmeli
+
+
+--- render da set state yapÄ±lmÄ±yor sadece  o componeneti dÃ¶nmeli
 
 
 
-choreme eklentisi post man  (furkan45    12345671   furkann0457@gmail.com),
+choreme eklentisi post man kullandÄ±k
 
 json serverimizi npm install -g json server
 
@@ -44,7 +44,7 @@ json serverimizi npm install -g json server
 
 
 
-npm install axios  ( bu kütüphaneyle get post işlemleri yaparız)
+npm install axios  ( bu kÃ¼tÃ¼phaneyle get post iÅŸlemleri yaparÄ±z)
 
 
 
@@ -58,48 +58,48 @@ npm install axios  ( bu kütüphaneyle get post işlemleri yaparız)
     {
     id : "unique-1",
     "name" : "Furkan SALMANLI",
-    "exam" : "Web ve Çoklu Ortam Geliştiricisi (Seviye 4)",
-    "result" : "20 Soru (17 Doğru 3 Yanlış)",
+    "exam" : "Web ve Ã‡oklu Ortam GeliÅŸtiricisi (Seviye 4)",
+    "result" : "20 Soru (17 DoÄŸru 3 YanlÄ±ÅŸ)",
     "date" : "03/11/2019 - 03/11/2020",  
     "contact" : "05366505840"
 },
 {
     "id" : "unique-2",
-    "name" : "Duygu ÖZER",
-    "exam": "Bilgi İşlem Destek Elemanı (Seviye 5)",
-    "result" : "20 Soru (14 Doğru 6 Yanlış)",
+    "name" : "Duygu Ã–ZER",
+    "exam": "Bilgi Ä°ÅŸlem Destek ElemanÄ± (Seviye 5)",
+    "result" : "20 Soru (14 DoÄŸru 6 YanlÄ±ÅŸ)",
     "date" : "05/10/2019 - 05/10/2021",  
     "contact" : "05377616951"
 },
 {
     "id" : "unique-3",
-    "name" : "Mustafa DEMİR",
-    "exam" : "Metal Kesim Operatörü (Seviye 4)",
-    "result" : "20 Soru (11 Doğru 9 Yanlış)",
+    "name" : "Mustafa DEMÄ°R",
+    "exam" : "Metal Kesim OperatÃ¶rÃ¼ (Seviye 4)",
+    "result" : "20 Soru (11 DoÄŸru 9 YanlÄ±ÅŸ)",
     "date" : "10/02/2019 - 10/02/2024",  
     "contact" : "05428769765"
 },
 {
     "id" : "unique-4",
-    "name" : "Mehmet DEMİRCİ",
-    "exam": "Çağrı Merkezi Müşteri Temsilcisi  (Seviye 4)",
-    "result":" 15 Soru (9 Doğru 6 Yanlış)",
+    "name" : "Mehmet DEMÄ°RCÄ°",
+    "exam": "Ã‡aÄŸrÄ± Merkezi MÃ¼ÅŸteri Temsilcisi  (Seviye 4)",
+    "result":" 15 Soru (9 DoÄŸru 6 YanlÄ±ÅŸ)",
     "date": "18/04/2019 - 18/04/2021",  
     "contact": "05489615465"
 },
 {
     "id" : "unique-5",
     "name" : "Beyza SALMANLI",
-    "exam": "Çağrı Merkezi Müşteri Temsilcisi  (Seviye 4)",
-    "result":" 10 Soru (9 Doğru 1 Yanlış)",
+    "exam": "Ã‡aÄŸrÄ± Merkezi MÃ¼ÅŸteri Temsilcisi  (Seviye 4)",
+    "result":" 10 Soru (9 DoÄŸru 1 YanlÄ±ÅŸ)",
     "date": "28/08/2019 - 28/08/2020",  
     "contact": "05300005465"
 },
 {
     "id" : "unique-6",
-    "name" : "KEMAL ÇAKALLI",
-    "exam": "Taksi Şoförü (Seviye 3)",
-    "result":" 10 Soru (10 Doğru 0 Yanlış)",
+    "name" : "KEMAL Ã‡AKALLI",
+    "exam": "Taksi ÅofÃ¶rÃ¼ (Seviye 3)",
+    "result":" 10 Soru (10 DoÄŸru 0 YanlÄ±ÅŸ)",
     "date": "01/03/2019 - 01/03/2020",  
     "contact": "05459715465"
 }
