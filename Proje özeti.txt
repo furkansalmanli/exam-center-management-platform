@@ -1,0 +1,110 @@
+0context api kullandýk.
+userprovider ve userconsumer ile  bilgi çektik
+userprovider ý  index js de kullanarak    <App> i sarmallaadýk.
+users sayfasýnda userconsumerdan veri çektik.
+reducer ve action  kullanarak  statelerimizi context sayfamýzdan aldýk. güncellenmemiþ statei alarak yeni 
+güncelleme iþlemei yaptýk.,
+reducer ile switch case kullanarak  silme iþlemi için id kontrolü yaptýrdýk.
+user sayfamýzda  payloadýmýzdan gelen id yi kullanarak action yardýmý ile silme iþlemini dispatchlerle saðladýk.
+
+
+user de silme iþlemi yaptýk
+
+
+SÝLME BÝTTÝ SIRA EKLEME DE -------------- adduser
+
+Form sayfasýnda  ekrana girdi almaý adduser den  saðladýk basýtýðýmýzda changeInput ile deðiþtirdik.
+Yeni ekleyeceðimiz adaya uniq id tamamladýk her adayýn id si farklý olsun diye bunuda uniqid kütüphanesi ile yaptýk.
+dispatch kullanarak add_user yapabilmek iin userconsumer context den  dahil ettik.
+context sayfamýzda delete user da olduðu gibi switch case kýsmýmýza add useri ekleriz.
+kullanýcýmýzý eklemiþ oluruz.
+
+EKLEME BÝTTÝ -----------------------------
+
+
+json server kullanýmý  bunun için jasonplaceholder  kullandýk.   online restful api miz
+
+db json dosyasý oluþturduk  context sayfamýzdaki verileri jsona aktardýk.
+json serveri çalýþtýrmak için : json-server --watch api/db.json
+json server istek yapabilmek için hep açýk olmalý
+
+
+
+
+
+--- render da set state yapýlmýyor sadece  o componeneti dönmeli
+
+
+
+choreme eklentisi post man  (furkan45    12345671   furkann0457@gmail.com),
+
+json serverimizi npm install -g json server
+
+
+
+
+
+npm install axios  ( bu kütüphaneyle get post iþlemleri yaparýz)
+
+
+
+
+
+
+
+{
+
+"users" : [
+    {
+    id : "unique-1",
+    "name" : "Furkan SALMANLI",
+    "exam" : "Web ve Çoklu Ortam Geliþtiricisi (Seviye 4)",
+    "result" : "20 Soru (17 Doðru 3 Yanlýþ)",
+    "date" : "03/11/2019 - 03/11/2020",  
+    "contact" : "05366505840"
+},
+{
+    "id" : "unique-2",
+    "name" : "Duygu ÖZER",
+    "exam": "Bilgi Ýþlem Destek Elemaný (Seviye 5)",
+    "result" : "20 Soru (14 Doðru 6 Yanlýþ)",
+    "date" : "05/10/2019 - 05/10/2021",  
+    "contact" : "05377616951"
+},
+{
+    "id" : "unique-3",
+    "name" : "Mustafa DEMÝR",
+    "exam" : "Metal Kesim Operatörü (Seviye 4)",
+    "result" : "20 Soru (11 Doðru 9 Yanlýþ)",
+    "date" : "10/02/2019 - 10/02/2024",  
+    "contact" : "05428769765"
+},
+{
+    "id" : "unique-4",
+    "name" : "Mehmet DEMÝRCÝ",
+    "exam": "Çaðrý Merkezi Müþteri Temsilcisi  (Seviye 4)",
+    "result":" 15 Soru (9 Doðru 6 Yanlýþ)",
+    "date": "18/04/2019 - 18/04/2021",  
+    "contact": "05489615465"
+},
+{
+    "id" : "unique-5",
+    "name" : "Beyza SALMANLI",
+    "exam": "Çaðrý Merkezi Müþteri Temsilcisi  (Seviye 4)",
+    "result":" 10 Soru (9 Doðru 1 Yanlýþ)",
+    "date": "28/08/2019 - 28/08/2020",  
+    "contact": "05300005465"
+},
+{
+    "id" : "unique-6",
+    "name" : "KEMAL ÇAKALLI",
+    "exam": "Taksi Þoförü (Seviye 3)",
+    "result":" 10 Soru (10 Doðru 0 Yanlýþ)",
+    "date": "01/03/2019 - 01/03/2020",  
+    "contact": "05459715465"
+}
+
+]
+
+
+}
